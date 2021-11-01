@@ -23,7 +23,7 @@ fetch(url).then(data => data.json()).then(data => {
 sheet_data = data.values;
 console.table(sheet_data);
 output_str ="";
-for(i =0;i<sheet_data.length;i++){
+for(i =0; i<sheet_data.length; i++){
 	output_str +=`<tr>`;
 	output_str +=`<td>${sheet_data[i][0]}</td>`;
 	output_str +=`<td>${sheet_data[i][1]}</td>`;
